@@ -6,7 +6,7 @@ import View from 'ol/View';
 import TileLayer from 'ol/layer/Tile';
 import XYZ from 'ol/source/XYZ';
 import OSM from 'ol/source/OSM';
-const map = ref(null);
+const map = ref();
 function initMap() {
   map.value = new Map({
     target: 'map',
@@ -17,7 +17,6 @@ function initMap() {
       new TileLayer({
         visible: true,
         source: new XYZ({
-          visible: true,
           url: 'http://webrd01.is.autonavi.com/appmaptile?x={x}&y={y}&z={z}&lang=zh_cn&size=2&scale=1&style=8',
         })
       })
