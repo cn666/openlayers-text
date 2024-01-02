@@ -21,6 +21,11 @@ const router = createRouter({
       path: '/map',
       name: 'map',
       component:() => import('../views/map.vue')
+    },
+    {
+      path: '/video',
+      name: 'video',
+      component:()  => import('../views/VideoHls.vue')
     }
   ]
 })
